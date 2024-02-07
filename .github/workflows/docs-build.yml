@@ -23,8 +23,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'lastest'
-          extended: true
+          hugo-version: 'latest'
+          #extended: true
 
       - name: Setup Docsy
         run:  git submodule update --init --recursive && npm install -D --save autoprefixer && npm install -D --save postcss-cli && npm install -D --save postcss
